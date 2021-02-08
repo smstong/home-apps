@@ -9,3 +9,13 @@ Software: Pi OS, Apache2 webserver, omxplayer
 App: CGI script written in Bash
 
 web client --- CGI script on Pi --- omxplayer on Pi 
+
+Steps
+=========
+
+on pi:
+run pi_setup.sh 
+set passwordless login from smstong@cf-31 to pi and root.
+
+on cf-31:
+run pi_install.sh
