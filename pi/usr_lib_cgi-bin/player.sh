@@ -15,16 +15,16 @@ echo $requestStr
 arr=($(echo $requestStr | sed -e 's/&/ /g'))
 for i in ${arr[@]}
 do
-	k=$(echo $i|cut -d= -f1)
-	v=$(echo $i|cut -d= -f2)
+	k=$(echo "$i"|cut -d= -f1)
+	v=$(echo "$i"|cut -d= -f2)
 	if [[ $k == "action" ]]; then
-		action=$v
+		action="$v"
 	fi
 	if [[ $k == "path" ]]; then
-		path=$v
+		path="$v"
 	fi
 	if [[ $k == "startTime" ]]; then
-		startTime=$v
+		startTime="$v"
 	fi
 done
 
