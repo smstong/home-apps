@@ -9,14 +9,3 @@ Software: Pi OS, Apache2 webserver, omxplayer
 App: CGI script written in Bash
 
 web client --- CGI script on Pi --- omxplayer on Pi 
-
-
-App setup
-=========
-
-Grant www-data user permissions to run omxplayer
-------------------------------------------------
-www-data is the run account of Apache2.
-
-# usermod -aG audio www-data
-# usermod -aG vedio www-data

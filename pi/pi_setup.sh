@@ -12,8 +12,5 @@ sudo usermod -aG video www-data
 cd /etc/apache2/mods-enabled
 sudo ln -s ../mods-available/cgi.load .
 
-# copy all in var_www_html to /var/www/html/
-# copy all in usr_lib_cgi-bin to /usr/lib/cgi-bin/
-
 # start up
 sudo systemctl start apache2
