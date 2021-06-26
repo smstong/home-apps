@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install apache2
-sudo yum install apache2
+sudo apt install apache2
 sudo systemctl enable apache2
 
 # grant www-data to video
